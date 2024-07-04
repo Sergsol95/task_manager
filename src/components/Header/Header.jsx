@@ -18,7 +18,7 @@ const HeaderLeft = styled.div`
 const MenuIconPlaceholder = styled.div`
   width: 24px;
   height: 24px;
-  background-color: #e0e0e0; /* Placeholder color */
+  background-color: #e0e0e0; 
   margin-right: 15px;
   border-radius: 4px;
 `;
