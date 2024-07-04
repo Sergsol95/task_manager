@@ -1,20 +1,24 @@
 import React from 'react';
-import './styles.css';
 import Header from './components/Header/Header';
 import Sidebar from './components/Sidebar/Sidebar';
 import MainContent from './components/MainContent/MainContent';
+import styled from 'styled-components';
+import './styles.css';
+
+const AppContainer = styled.div`
+  display: flex;
+  width: 100%;
+`;
 
 const App = () => {
   return (
-<div>
-    <div className='content'>
-    <Sidebar />
-      <div className='main'>
+    <div>
       <Header />
+      <AppContainer>
+        <Sidebar />
         <MainContent />
-        </div>
-      </div>
-</div>
+      </AppContainer>
+    </div>
   );
 };
 

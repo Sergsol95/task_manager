@@ -1,17 +1,32 @@
-import React from 'react';
-import './Sidebar.css';
+import React from "react";
+import styled from "styled-components";
+
+const SidebarContainer = styled.aside`
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+`;
+
+const SidebarList = styled.ul`
+  list-style: none;
+  padding: 0;
+`;
+
+const SidebarListItem = styled.li`
+  margin: 10px 0;
+`;
 
 const Sidebar = () => {
   return (
-    <aside className="sidebar">
-      <ul>
-        <li>Tasks</li>
-        <li>Dashboard</li>
-        <li>Projects</li>
-        <li>Calendar</li>
-        <li>Settings</li>
-      </ul>
-    </aside>
+    <SidebarContainer>
+      <SidebarList>
+        <SidebarListItem>Dashboard</SidebarListItem>
+        <SidebarListItem>Projects</SidebarListItem>
+        <SidebarListItem>Calendar</SidebarListItem>
+        <SidebarListItem>Settings</SidebarListItem>
+      </SidebarList>
+    </SidebarContainer>
   );
 };
 
