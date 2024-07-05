@@ -1,4 +1,6 @@
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import theme from './theme';
 import Header from './components/Header/Header';
 import Sidebar from './components/Sidebar/Sidebar';
 import MainContent from './components/MainContent/MainContent';
@@ -12,13 +14,13 @@ const AppContainer = styled.div`
 
 const App = () => {
   return (
-    <div>
+    <ThemeProvider theme={theme}>
       <Header />
       <AppContainer>
         <Sidebar />
         <MainContent />
       </AppContainer>
-    </div>
+    </ThemeProvider>
   );
 };
 

@@ -5,9 +5,9 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: ${({ theme }) => theme.sizes.padding};
+  background-color: ${({ theme }) => theme.colors.primary};
+  box-shadow: 0 2px 4px ${({ theme }) => theme.colors.shadow};
 `;
 
 const HeaderLeft = styled.div`
@@ -18,7 +18,7 @@ const HeaderLeft = styled.div`
 const MenuIconPlaceholder = styled.div`
   width: 24px;
   height: 24px;
-  background-color: #e0e0e0; 
+  background-color: ${({ theme }) => theme.colors.placeholder}; 
   margin-right: 15px;
   border-radius: 4px;
 `;
@@ -26,7 +26,7 @@ const MenuIconPlaceholder = styled.div`
 const HeaderRight = styled.div`
   display: flex;
   align-items: center;
-  background-color: #f8f8f8;
+  background-color: ${({ theme }) => theme.colors.secondary};
   border-radius: 30px;
   padding: 5px 10px;
 `;
@@ -42,7 +42,7 @@ const SearchInput = styled.input`
 const SearchIconPlaceholder = styled.div`
   width: 20px;
   height: 20px;
-  background-color: #e0e0e0; 
+  background-color: ${({ theme }) => theme.colors.secondary}; 
   margin-left: 10px;
   border-radius: 50%;
 `;

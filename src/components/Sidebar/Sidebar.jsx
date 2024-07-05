@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 const SidebarContainer = styled.aside`
-  width: 250px;
-  background-color: #fff;
-  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  width: ${({ theme }) => theme.sizes.sidebarWidth};
+  background-color: ${({ theme }) => theme.colors.background};
+  box-shadow: 2px 0 4px ${({ theme }) => theme.colors.shadow};
+  padding: ${({ theme }) => theme.sizes.padding};
 `;
 
 const SidebarList = styled.ul`

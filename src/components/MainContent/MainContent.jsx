@@ -4,12 +4,12 @@ import Task from "../Task/Task";
 
 const MainContentContainer = styled.main`
   flex-grow: 1;
-  padding: 20px;
-  background-color: #f0f2f5;
+  padding: ${({ theme }) => theme.sizes.padding};
+  background-color: ${({ theme }) => theme.colors.secondary};
 `;
 
 const Section = styled.section`
-  margin-bottom: 20px;
+  margin-bottom: ${({ theme }) => theme.sizes.margin};
 `;
 
 const MainContent = () => {
