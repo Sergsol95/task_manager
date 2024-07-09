@@ -31,7 +31,7 @@ const Task = ({ title, description, onDelete }) => {
       <h3>{title}</h3>
       <p>{description}</p>
       </TaskDivider>
-      <DeleteButton onСlick={onDelete}>Delete</DeleteButton>
+      <DeleteButton onClick={onDelete}>Delete</DeleteButton>
     </TaskItemContainer>
   );
 };
